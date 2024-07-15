@@ -1,0 +1,239 @@
+/* Media query for large screens (e.g., desktops) */
+@media screen and (max-width: 1200px) {
+    /* Styles for large screens */
+}
+
+
+/* Media query for medium screens (e.g., tablets) */
+@media screen and (max-width: 992px) {
+    .container {
+        width: 95%;
+    }
+
+    /* small line related h2  */
+    .h2-content h2::before {
+            right: 40%;
+    }
+
+    .s-container .h2-content h2::before {
+        right: 35%;
+    }
+
+
+    /* start about section */
+    .about .about-img .img-border {
+        border: none;
+        width: 80%;
+        margin: 0 ;
+    }
+
+    .about .about-img .img-border .img {
+        top: 0;
+        left: 0;
+    }
+
+    .about .about-img,
+    .about .about-content {
+        padding: 30px 0;
+    }
+
+    /* end about section */
+
+    /* start service section  */
+
+    .service .service-cards .service-card {
+        width: 50%;
+    }
+
+
+
+    /* end service section  */
+
+    /* start protfolio section */
+
+    .Portfolio .Portfolio-cards .Portfolio-card-content {
+        width: calc(50% - 20px);
+    }
+
+    /* end protfolio section */
+
+    
+    .testimonial .testimonial-card {
+        width: 100%;
+    }
+
+    .blog .blog-card-img iframe {
+        height: 24vh;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    .container {
+        width: 80%;
+        }
+    /* small line related h2  */
+    .h2-content h2::before {
+            right: 37%;
+        }
+    .h2-content h2::after {
+        width: 15%;
+        }
+
+        .s-container .h2-content h2::before {
+            right: 30%;
+        }
+
+        .navbar label {
+            display: block;
+        }
+
+        .navbar .container ul  {
+            position: absolute;
+            top: 100%;
+            left: 0%;
+            width: 100%;
+            display: block;
+            text-align: center;
+            max-height: 0;
+            overflow: hidden;
+            transition: 0.5s all ease-in-out;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        
+        .navbar .container ul li a {
+            /* background-color: rgb(51, 51, 51); */
+            color: white;
+            display: block;
+            padding: 8px 0;
+        }
+
+
+        .navbar .container label i {
+            color: white;
+            margin: 0 120px 0 auto;
+            font-size: 18px;
+            cursor: pointer;
+
+        }
+
+
+        .navbar .container  #menu:checked + ul {
+            max-height: 100vh;
+        }
+    .about .about-content {
+        width: 100%;
+        padding: 30px 0;
+        margin-left: 60px;
+    }
+
+    .about .about-img {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .about .about-content .lists {
+        width: 70%;
+        }
+
+        .service .service-cards .service-card {
+            width: 100%;
+        }
+
+        .Portfolio .Portfolio-cards .Portfolio-card-content {
+            width: calc(100% - 20px);
+        }
+
+        .project .project-items .project-item {
+            width: 100%;
+        }
+
+        .testimonial .testimonial-card {
+            flex-wrap: wrap;
+
+        }
+        .testimonial .testimonial-card::after {
+            left: -36%;
+        }
+
+        .testimonial .testimonial-img {
+            width: 50%;
+            margin-top: 10%;
+            margin-bottom: 1%;
+        }
+
+        .testimonial .testimonial-img img {
+            width: 60%;
+        }
+
+        .blog .blog-cards {
+            justify-content: center;
+        }
+
+        .blog .blog-card {
+            width: 60%;
+            margin-bottom: 30px;
+
+        }
+
+        .blog .blog-card-img iframe {
+            height: 30vh;
+        }
+
+        .contact .contact-content .input-name {
+            width: 100%;
+        }
+        
+        .contact .contact-content .input-email {
+            width: 100%;
+            margin-left: 0;
+        }
+
+
+
+
+
+
+}
+/* Media query for small screens (e.g., smartphones) */
+@media screen and (max-width: 576px) {
+
+    .h2-content h2::before {
+        right: 30%;
+    }
+
+    .s-container .h2-content h2::before {
+        right: 22%;
+    }
+
+    .s-container .h2-content h2::after {
+        width: 20%;
+    }
+
+    .contact .contact-content .input-name {
+        width: 100%;
+    }
+    
+    .contact .contact-content .input-email {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .Portfolio .Portfolio-buttons button {
+        margin-right: 10px;
+        padding: 0;
+    }
+
+    .testimonial .testimonial-card::after {
+        left: -35%;
+        border: solid 140px #ff305b;
+    }
+}
+
+
+
+
+
